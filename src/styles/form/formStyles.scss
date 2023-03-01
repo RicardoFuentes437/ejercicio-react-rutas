@@ -1,0 +1,19 @@
+$height: 25px;
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+
+    .input{
+        width: 70%;
+        height: $height;
+    }
+
+    button{
+        height: $height;
+        width: 70%;
+    }
+}

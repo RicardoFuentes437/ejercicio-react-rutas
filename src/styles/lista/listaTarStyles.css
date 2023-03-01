@@ -1,0 +1,7 @@
+.contenido {
+  width: 400px;
+}
+.contenido .tabla {
+  height: 350px;
+  overflow: scroll;
+}/*# sourceMappingURL=listaTarStyles.css.map */
