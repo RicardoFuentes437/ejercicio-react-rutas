@@ -1,10 +1,10 @@
 import './App.css';
-import ListaTareas from './componentes/listaTareas';
+import Routing from './Routing';
 
 function App() {
   return (
     <div className="App">
-      <ListaTareas></ListaTareas>
+      <Routing></Routing>
     </div>
   );
 }

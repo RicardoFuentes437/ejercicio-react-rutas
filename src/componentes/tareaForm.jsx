@@ -50,21 +50,21 @@ const TareaForm = ({ add }) => {
       {({ values, errors, touched, isSubmitting, handleChange, handleBlur }) => (
         <Form>
           <label htmlFor="name">Name</label>
-          <Field id="name" type="text" name="name" class="input" placeholder="Nombre de la tarea"/>
+          <Field id="name" type="text" name="name" className="input" placeholder="Nombre de la tarea"/>
           { errors.name && touched.name &&
             (
               <ErrorMessage name="name" component='div'></ErrorMessage>
             )
           }
           <label htmlFor="description">Description</label>
-          <Field id="description" type="text" name="description" class="input" placeholder="Descripcion de tarea"/>
+          <Field id="description" type="text" name="description" className="input" placeholder="Descripcion de tarea"/>
           { errors.description && touched.description &&
             (
               <ErrorMessage name="description" component='div'></ErrorMessage>
             )
           }
           <label htmlFor="level">Description</label>
-          <Field as="select" name="level" class="input">
+          <Field as="select" name="level" className="input">
             <option value={LEVELS.NORMAL}>Normal</option>
             <option value={LEVELS.URGENTE}>Urgent</option>
             <option value={LEVELS.BLOCKING}>Blocking</option>

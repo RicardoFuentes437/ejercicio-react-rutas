@@ -27,7 +27,7 @@ const ListaTareas = () => {
         console.log('Actualizando tarea:', tarea);
         const index = tareas.indexOf(tarea);
         const tempTareas = [...tareas];
-        tempTareas[index].conectado = !tempTareas[index].conectado;
+        tempTareas[index].completed = !tempTareas[index].completed;
         // We update the state of the component with the new list of tasks and it will update the
         // Iteration of the tasks in order to show the task updated
         setTareas(tempTareas);
